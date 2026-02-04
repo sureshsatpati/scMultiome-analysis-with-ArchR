@@ -26,19 +26,33 @@ R (and relevant R libraries)
 
 ## 3. Code:
 library(dplyr)
+
 library(Seurat)
+
 library(scales)
+
 library(cowplot)
+
 library(ggplot2)
+
 library(RColorBrewer)
+
 library(gplots)
+
 library(sctransform)
+
 library(SingleCellExperiment)
+
 library(cluster)
+
 library(factoextra)
+
 library(intrinsicDimension)
+
 library(DoubletFinder)
+
 set.seed(1)
+
 rm()
 gc()
 
@@ -53,7 +67,7 @@ addArchRGenome("hg38")
 #change1
 #_BEGIN_ multiple lines comment
 #if (FALSE) {
-#inputFiles <- c("/rsrch3/home/genomic_med/ssatpati/Tcell_Exaustion/3.Analysis-Mito0/Common_Cells/input/D1_Tex_1/atac_fragments.tsv.gz","/rsrch3/home/genomic_med/ssatpati/Tcell_Exaustion/3.Analysis-Mito0/Common_Cells/input/D1_Tex_2/atac_fragments.tsv.gz","/rsrch3/home/genomic_med/ssatpati/Tcell_Exaustion/3.Analysis-Mito0/Common_Cells/input/D1_Tex_3/atac_fragments.tsv.gz","/rsrch3/home/genomic_med/ssatpati/Tcell_Exaustion/3.Analysis-Mito0/Common_Cells/input/D1_Tex_4/atac_fragments.tsv.gz","/rsrch3/home/genomic_med/ssatpati/Tcell_Exaustion/3.Analysis-Mito0/Common_Cells/input/D1_Tex_5/atac_fragments.tsv.gz")
+#inputFiles <- c("/rsrch3/home/genomic_med/ssatpati/Tcell_Exaustion/3.AnalysisMito0/Common_Cells/input/D1_Tex_1/atac_fragments.tsv.gz","/rsrch3/home/genomic_med/ssatpati/Tcell_Exaustion/3.Analysis-Mito0/Common_Cells/input/D1_Tex_2/atac_fragments.tsv.gz","/rsrch3/home/genomic_med/ssatpati/Tcell_Exaustion/3.Analysis-Mito0/Common_Cells/input/D1_Tex_3/atac_fragments.tsv.gz","/rsrch3/home/genomic_med/ssatpati/Tcell_Exaustion/3.Analysis-Mito0/Common_Cells/input/D1_Tex_4/atac_fragments.tsv.gz","/rsrch3/home/genomic_med/ssatpati/Tcell_Exaustion/3.Analysis-Mito0/Common_Cells/input/D1_Tex_5/atac_fragments.tsv.gz")
 #names(inputFiles) <- c("D1_Tex_1","D1_Tex_2","D1_Tex_3","D1_Tex_4","D1_Tex_5")
 
 #inputFiles
