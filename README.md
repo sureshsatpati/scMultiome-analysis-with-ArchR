@@ -54,16 +54,21 @@ library(DoubletFinder)
 set.seed(1)
 
 rm()
+
 gc()
 
 library(ArchR)
+
 addArchRThreads(threads = 1)
 
 library(Seurat)
+
 library(SingleCellExperiment)
+
 library("BSgenome.Hsapiens.UCSC.hg38")
 
 addArchRGenome("hg38")
+
 #change1
 #_BEGIN_ multiple lines comment
 #if (FALSE) {
@@ -71,9 +76,6 @@ addArchRGenome("hg38")
 #names(inputFiles) <- c("D1_Tex_1","D1_Tex_2","D1_Tex_3","D1_Tex_4","D1_Tex_5")
 
 #inputFiles
-
-
-
 
 #ArrowFiles <- createArrowFiles(
 #inputFiles = inputFiles,
